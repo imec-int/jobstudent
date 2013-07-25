@@ -1,0 +1,22 @@
+!!! 5
+html
+	head
+		meta(name='viewport', content='initial-scale=1.0, user-scalable=no')
+		title Title
+
+		link(rel='stylesheet', href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css")
+
+		link(rel='stylesheet', href="/stylesheets/style.css")
+
+		script(type='text/javascript', src='//code.jquery.com/jquery.min.js')
+		script(type='text/javascript', src='//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js')
+		script(type='text/javascript', src='/javascripts/index.js')
+
+	body
+		span(id='sam', bla='test')
+			- for(var i in names){
+			div #{names[i]}
+			- }
+
+		button.btn.btn-primary#knopke Test
+
